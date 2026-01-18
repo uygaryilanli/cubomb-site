@@ -3,14 +3,119 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cubomb</title>
+  <title>Cubomb • Support & Privacy</title>
+  <style>
+    :root {
+      --wood-1: #2b1e14;
+      --wood-2: #5c3b24;
+      --wood-3: #8a5a3c;
+      --accent-1: #4d96ff;
+      --accent-2: #5bcb90;
+      --accent-3: #f4d35e;
+      --accent-4: #e63946;
+      --text: #f6f1eb;
+      --muted: #d8cfc6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--wood-1), var(--wood-2), var(--wood-3));
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    .hero {
+      display: grid;
+      gap: 18px;
+      padding: 28px;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+    .logo {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-4));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: -6px;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 26px;
+    }
+    .card {
+      padding: 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #fff;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    a { color: #fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Cubomb</h1>
-  <p>Support & Privacy:</p>
-  <p>Contact: uygarsnakely@gmail.com</p>
-  <p>We store nickname, max score, tokens, and analytics for gameplay and leaderboards.</p>
-  <p>Ads are served via Google AdMob.</p>
-  <p>Data deletion: use the in‑app delete account button.</p>
+  <div class="container">
+    <div class="hero">
+      <div class="logo">Cubomb</div>
+      <div class="tagline">Support & Privacy Information</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Support</h3>
+        <p>For support: <a href="mailto:uygarsnakely@gmail.com">uygarsnakely@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Privacy Policy</h3>
+        <p>We collect nickname, max score, tokens, and analytics data to provide gameplay and leaderboards.</p>
+      </div>
+      <div class="card">
+        <h3>Data Storage</h3>
+        <p>Data is stored in Google Firebase services. Ads are served via Google AdMob.</p>
+      </div>
+      <div class="card">
+        <h3>Data Deletion</h3>
+        <p>You can delete your account and data inside the app using the delete button on the home screen.</p>
+      </div>
+      <div class="card">
+        <h3>Advertising</h3>
+        <p>Cubomb displays rewarded ads and interstitial ads.</p>
+      </div>
+    </div>
+
+    <div class="footer">© 2026 Cubomb</div>
+  </div>
 </body>
 </html>
